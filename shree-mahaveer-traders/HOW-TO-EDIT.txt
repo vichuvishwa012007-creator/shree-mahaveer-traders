@@ -1,0 +1,135 @@
+============================================================
+  SHREE MAHAVEER TRADERS — WEBSITE EDITING GUIDE
+  Complete Instructions for Editing & Deploying
+============================================================
+
+----------------------------------------------------------
+  HOW TO CHANGE PRODUCT IMAGES
+----------------------------------------------------------
+
+1. Prepare your images (JPG or PNG), recommended size: 800x600px
+   Name them clearly:
+     Jute:   jute1.jpg, jute2.jpg, jute3.jpg, jute4.jpg, jute5.jpg
+     Ajwain: ajwain1.jpg, ajwain2.jpg, ajwain3.jpg, ajwain4.jpg, ajwain5.jpg
+
+2. Copy all image files into the /images/ folder
+
+3. Open index.html in Notepad (or any text editor)
+
+4. Find the image tags. Each looks like this:
+     <img src="https://images.unsplash.com/..." .../>
+
+5. Replace the src="..." URL with your image path. Example:
+     BEFORE: src="https://images.unsplash.com/photo-xyz..."
+     AFTER:  src="images/jute1.jpg"
+
+6. There are 10 images total — 5 Jute + 5 Ajwain
+   Each has a comment above it showing which one to edit:
+     <!-- TO EDIT IMAGE: Replace the URL below -->
+
+----------------------------------------------------------
+  HOW TO CHANGE PRODUCT NAME / DESCRIPTION
+----------------------------------------------------------
+
+Open index.html in Notepad.
+
+Find the product name:
+  <h3 class="product-name">Tossa Jute (Corchorus olitorius)</h3>
+Change the text between the tags.
+
+Find the product description:
+  <p class="product-desc">Our finest grade ...</p>
+Change the text inside.
+
+Find the tags/badges:
+  <span class="meta-tag">Export Grade</span>
+Change the text inside.
+
+----------------------------------------------------------
+  HOW TO CHANGE PHONE NUMBER
+----------------------------------------------------------
+
+Search for: +91 XXXXX XXXXX
+Replace with your actual number, e.g.: +91 98400 12345
+
+Also update:
+  <a href="tel:+91XXXXXXXXXX"> → change to <a href="tel:+919840012345">
+
+----------------------------------------------------------
+  HOW TO CHANGE EMAIL
+----------------------------------------------------------
+
+Search for: shreemahaveertraders@gmail.com
+Replace with your actual email everywhere it appears.
+
+----------------------------------------------------------
+  HOW TO CHANGE SHOP ADDRESS / OWNER NAMES
+----------------------------------------------------------
+
+Search for the text in index.html and replace directly.
+The address, owner names, and manager name all appear in:
+  - The Contact section
+  - The Footer
+
+----------------------------------------------------------
+  HOW TO DEPLOY FOR FREE (No Error Steps)
+----------------------------------------------------------
+
+OPTION A: Netlify (RECOMMENDED — Easiest, Free Forever)
+---------------------------------------------------------
+1. Go to https://www.netlify.com and sign up (free)
+2. Click "Add new site" → "Deploy manually"
+3. Drag and drop the entire "shree-mahaveer-traders" FOLDER
+   onto the Netlify upload box
+4. Wait 10-30 seconds — your site is LIVE!
+5. You'll get a URL like: https://random-name.netlify.app
+6. To get a custom name: Site settings → Change site name
+   e.g.: https://shreemahaveertraders.netlify.app
+
+OPTION B: GitHub Pages (Free)
+---------------------------------------------------------
+1. Go to https://github.com and create a free account
+2. Click "New Repository" → name it: shreemahaveertraders
+3. Upload all files (index.html, css folder, js folder, images folder)
+4. Go to Settings → Pages → Source: main branch → Save
+5. Your site will be at: https://yourusername.github.io/shreemahaveertraders
+
+OPTION C: Vercel (Free, Fast)
+---------------------------------------------------------
+1. Go to https://vercel.com and sign up with GitHub
+2. Click "Add New Project" → Import your GitHub repository
+3. Click Deploy — done in seconds!
+
+----------------------------------------------------------
+  FOLDER STRUCTURE (Important — Keep This Order)
+----------------------------------------------------------
+
+shree-mahaveer-traders/
+├── index.html          ← Main website file (NEVER rename)
+├── css/
+│   └── style.css       ← All styling
+├── js/
+│   └── main.js         ← All interactivity
+├── images/
+│   ├── jute1.jpg       ← Your product photos go here
+│   ├── jute2.jpg
+│   ├── jute3.jpg
+│   ├── jute4.jpg
+│   ├── jute5.jpg
+│   ├── ajwain1.jpg
+│   ├── ajwain2.jpg
+│   ├── ajwain3.jpg
+│   ├── ajwain4.jpg
+│   └── ajwain5.jpg
+└── HOW-TO-EDIT.txt     ← This file
+
+----------------------------------------------------------
+  OPENING LOCALLY (to preview before uploading)
+----------------------------------------------------------
+
+Just double-click index.html — it will open in your browser.
+No installation or server needed for preview.
+
+============================================================
+  For technical help, share this folder with a web developer
+============================================================
